@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Mentoria prática para dominar o Cursor — o editor de código com IA. Tutoriais rápidos, trilha guiada e dicas para iniciantes.">
+  <title>Mentoria Cursor — Aprenda a usar o editor com IA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="connection-banner" id="connectionBanner" hidden>
+    <p>Para os vídeos funcionarem no site, dê duplo clique em <strong>iniciar.bat</strong> na pasta do projeto.</p>
+    <button type="button" id="dismissBanner" aria-label="Fechar aviso">×</button>
+  </div>
+  <header class="header" id="topo">
+    <nav class="nav container">
+      <a href="#topo" class="logo">
+        <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        Mentoria Cursor
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#trilha">Trilha</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#contato" class="btn btn-sm">Começar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-badge">Mentoria prática · Iniciantes</p>
+        <h1>Domine o <span class="gradient-text">Cursor</span> do zero ao produtivo</h1>
+        <p class="hero-subtitle">
+          Aprenda a usar o editor de código com IA que está transformando a forma de programar.
+          Tutoriais rápidos, trilha estruturada e acompanhamento focado no essencial.
+        </p>
+        <div class="hero-actions">
+          <a href="#videos" class="btn btn-primary">Ver tutoriais</a>
+          <a href="#trilha" class="btn btn-outline">Explorar trilha</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>3</strong>
+            <span>vídeos de até 1 min</span>
+          </div>
+          <div class="stat">
+            <strong>5</strong>
+            <span>módulos guiados</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>foco prático</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">O que é a mentoria</span>
+          <h2>Seu guia para o Cursor</h2>
+          <p>
+            O Cursor é um editor baseado no VS Code com IA integrada. Nossa mentoria ajuda você a
+            instalar, configurar e usar os modos Ask, Agent e Composer com confiança — sem se perder
+            em funcionalidades avançadas no primeiro dia.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">01</div>
+            <h3>Instalação e setup</h3>
+            <p>Baixe o Cursor, abra seu primeiro projeto e configure o ambiente em minutos.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">02</div>
+            <h3>Interface e atalhos</h3>
+            <p>Entenda o layout, o painel de chat e os atalhos que aceleram seu fluxo diário.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">03</div>
+            <h3>IA na prática</h3>
+            <p>Use Chat, Agent e autocomplete para escrever, revisar e refatorar código com segurança.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="videos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tutoriais rápidos</span>
+          <h2>3 vídeos para começar agora</h2>
+          <p>
+            Cada vídeo dura no máximo 1 minuto e cobre um passo essencial da utilização inicial do Cursor.
+            Assista na ordem ou pule direto para o que você precisa.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card" data-video="1">
+            <div
+              class="video-wrapper"
+              data-youtube-id="QzY9DlGQ4DM"
+              data-start="62"
+              data-title="Tutorial 1: Como instalar o Cursor">
+              <button type="button" class="video-play" aria-label="Reproduzir: Instalação do Cursor">
+                <span class="video-poster" aria-hidden="true"></span>
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span class="play-label">Assistir tutorial</span>
+              </button>
+            </div>
+            <div class="video-info">
+              <span class="video-duration">~1 min</span>
+              <h3>Instalação do Cursor</h3>
+              <p>Baixe e instale o editor no Windows, macOS ou Linux em poucos passos.</p>
+              <ul class="video-topics">
+                <li>Download em cursor.com</li>
+                <li>Primeiro login</li>
+                <li>Abrir o editor</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="video-card" data-video="2">
+            <div
+              class="video-wrapper"
+              data-youtube-id="3289vhOUdKA"
+              data-start="0"
+              data-title="Tutorial 2: Primeiros passos no Cursor">
+              <button type="button" class="video-play" aria-label="Reproduzir: Primeiros passos">
+                <span class="video-poster" aria-hidden="true"></span>
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span class="play-label">Assistir tutorial</span>
+              </button>
+            </div>
+            <div class="video-info">
+              <span class="video-duration">~1 min</span>
+              <h3>Primeiros passos</h3>
+              <p>Conheça a interface e abra seu primeiro projeto no Cursor.</p>
+              <ul class="video-topics">
+                <li>Layout do painel</li>
+                <li>Abrir pasta/projeto</li>
+                <li>Navegação básica</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="video-card" data-video="3">
+            <div
+              class="video-wrapper"
+              data-youtube-id="3289vhOUdKA"
+              data-start="200"
+              data-title="Tutorial 3: Chat com IA no Cursor">
+              <button type="button" class="video-play" aria-label="Reproduzir: Chat com IA">
+                <span class="video-poster" aria-hidden="true"></span>
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span class="play-label">Assistir tutorial</span>
+              </button>
+            </div>
+            <div class="video-info">
+              <span class="video-duration">~1 min</span>
+              <h3>Chat com IA</h3>
+              <p>Aprenda a abrir o chat e fazer sua primeira pergunta ao assistente.</p>
+              <ul class="video-topics">
+                <li>Atalho Ctrl+L / Cmd+L</li>
+                <li>Fazer perguntas sobre o código</li>
+                <li>Revisar sugestões</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="video-progress">
+          <p>Vídeos assistidos: <strong id="watchedCount">0</strong> de 3</p>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trilha">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trilha de aprendizado</span>
+          <h2>Do download ao primeiro código com IA</h2>
+          <p>Siga esta sequência após assistir aos vídeos. Cada módulo leva cerca de 15 a 30 minutos na prática.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker">1</div>
+            <div class="timeline-content">
+              <h3>Download e instalação</h3>
+              <p>Acesse <a href="https://cursor.com" target="_blank" rel="noopener">cursor.com</a>, baixe para seu sistema operacional e faça login.</p>
+              <code class="inline-code">File → Open Folder</code>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">2</div>
+            <div class="timeline-content">
+              <h3>Conheça a interface</h3>
+              <p>Explore o explorador de arquivos, o terminal integrado e o painel lateral de IA.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">3</div>
+            <div class="timeline-content">
+              <h3>Modo Ask (somente leitura)</h3>
+              <p>Use <kbd>Ctrl</kbd>+<kbd>L</kbd> para perguntar sobre o código sem alterar arquivos.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">4</div>
+            <div class="timeline-content">
+              <h3>Modo Agent</h3>
+              <p>Pressione <kbd>Ctrl</kbd>+<kbd>I</kbd>, descreva uma tarefa e revise as alterações no diff.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">5</div>
+            <div class="timeline-content">
+              <h3>Regras e boas práticas</h3>
+              <p>Crie arquivos em <code>.cursor/rules/</code> para orientar a IA sobre padrões do seu projeto.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="recursos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Recursos úteis</span>
+          <h2>Links oficiais e referências</h2>
+        </div>
+        <div class="resources-grid">
+          <a href="https://cursor.com" target="_blank" rel="noopener" class="resource-link">
+            <span class="resource-title">Site oficial</span>
+            <span class="resource-desc">Download e novidades</span>
+          </a>
+          <a href="https://docs.cursor.com" target="_blank" rel="noopener" class="resource-link">
+            <span class="resource-title">Documentação</span>
+            <span class="resource-desc">Guias e referência completa</span>
+          </a>
+          <a href="https://cursor.com/help/ai-features/agent" target="_blank" rel="noopener" class="resource-link">
+            <span class="resource-title">Modo Agent</span>
+            <span class="resource-desc">Como usar o assistente autônomo</span>
+          </a>
+          <a href="https://forum.cursor.com" target="_blank" rel="noopener" class="resource-link">
+            <span class="resource-title">Comunidade</span>
+            <span class="resource-desc">Fórum e dúvidas da comunidade</span>
+          </a>
+        </div>
+
+        <div class="shortcuts-panel">
+          <h3>Atalhos essenciais</h3>
+          <div class="shortcuts-grid">
+            <div class="shortcut">
+              <kbd>Ctrl</kbd> + <kbd>L</kbd>
+              <span>Chat / Ask</span>
+            </div>
+            <div class="shortcut">
+              <kbd>Ctrl</kbd> + <kbd>I</kbd>
+              <span>Agent / Composer</span>
+            </div>
+            <div class="shortcut">
+              <kbd>Ctrl</kbd> + <kbd>K</kbd>
+              <span>Edição inline</span>
+            </div>
+            <div class="shortcut">
+              <kbd>Tab</kbd>
+              <span>Aceitar autocomplete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="contato">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Pronto para começar sua mentoria?</h2>
+          <p>Preencha o formulário e receba um plano personalizado para dominar o Cursor no seu ritmo.</p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-row">
+              <label for="nivel">Nível de experiência</label>
+              <select id="nivel" name="nivel" required>
+                <option value="">Selecione...</option>
+                <option value="iniciante">Iniciante — nunca usei Cursor</option>
+                <option value="basico">Básico — já instalei, mas não domino</option>
+                <option value="intermediario">Intermediário — quero avançar</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="mensagem">O que você quer aprender?</label>
+              <textarea id="mensagem" name="mensagem" rows="3" placeholder="Ex.: quero criar meu primeiro site com IA..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Solicitar mentoria</button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        Mentoria Cursor
+      </div>
+      <p class="footer-note">
+        Site educacional independente. Cursor é marca de seus respectivos proprietários.
+      </p>
+      <p class="footer-copy">&copy; 2026 Mentoria Cursor. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" hidden>↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
