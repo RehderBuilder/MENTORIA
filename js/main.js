@@ -9,31 +9,10 @@
   const watchedCountEl = document.getElementById('watchedCount');
   const progressFill = document.getElementById('progressFill');
   const videoCards = document.querySelectorAll('.video-card');
-  const connectionBanner = document.getElementById('connectionBanner');
-  const dismissBanner = document.getElementById('dismissBanner');
 
   const STORAGE_KEY = 'mentoria-cursor-videos';
-  const BANNER_KEY = 'mentoria-cursor-banner-dismissed';
   const TOTAL_VIDEOS = 3;
   const IS_LOCAL_FILE = window.location.protocol === 'file:';
-
-  /* ----- Connection banner (file://) ----- */
-  if (IS_LOCAL_FILE && connectionBanner) {
-    const dismissed = localStorage.getItem(BANNER_KEY) === '1';
-    if (!dismissed) {
-      connectionBanner.hidden = false;
-      document.body.classList.add('has-banner');
-    }
-  }
-
-  if (dismissBanner && connectionBanner) {
-    dismissBanner.addEventListener('click', function () {
-      connectionBanner.hidden = true;
-      document.body.classList.remove('has-banner');
-      localStorage.setItem(BANNER_KEY, '1');
-    });
-  }
-
   /* ----- Mobile navigation ----- */
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', function () {
